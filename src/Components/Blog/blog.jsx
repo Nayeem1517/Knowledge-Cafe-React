@@ -15,7 +15,7 @@ const Blog = ({blog,handleAddToBookmark}) => {
                 </div>
                 <div>
                     <span>{reading_time} min read </span>
-                    <button onClick={handleAddToBookmark} className='text-2xl text-emerald-700 ml-4'> <IoBookmarksOutline /></button>
+                    <button onClick={() => handleAddToBookmark(blog)} className='text-2xl text-emerald-700 ml-4'> <IoBookmarksOutline /></button>
                 </div>
             </div>
             <img className='w-full mb-8'  src={cover} alt={`Cover Picture of The Title ${title}`} />
